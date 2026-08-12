@@ -11,7 +11,7 @@ def init_excel():
         ws.cell(row=1, column=i).value = h
     wb.save('C:\\Users\\Admin\\Desktop\\excel.xlsx')
 
-# Add form data
+# Add form data to registration
 def insert_data():
     if all(f.get() for f in entries):
         row = ws.max_row + 1
